@@ -1,0 +1,20 @@
+
+CREATE TABLE  if NOT EXISTS `user` (
+  `id`      BIGINT(20)    NOT NULL AUTO_INCREMENT,
+  `name`    VARCHAR(200)  NOT NULL,
+  `address` VARCHAR(1000) NOT NULL,
+  `national_id`   BIGINT(20) NOT NULL  null,
+  PRIMARY KEY (`id`)
+)
+  ENGINE = InnoDB
+  AUTO_INCREMENT = 10
+  DEFAULT CHARSET = utf8;
+CREATE TABLE IF NOT EXISTS `national` (
+  `id`      BIGINT(20)    NOT NULL AUTO_INCREMENT,
+  `national_id` BIGINT(20) NOT NULL,
+  `name`    VARCHAR(200)  NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 10
+  DEFAULT CHARSET = utf8;
+
