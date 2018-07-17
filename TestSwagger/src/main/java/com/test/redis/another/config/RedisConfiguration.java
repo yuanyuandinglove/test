@@ -22,7 +22,7 @@ public class RedisConfiguration extends CachingConfigurerSupport {
     /**
      * 自定义生成key的规则
      */
-   /* @Override
+    @Override
     public KeyGenerator keyGenerator() {
         return new KeyGenerator() {
             @Override
@@ -42,7 +42,6 @@ public class RedisConfiguration extends CachingConfigurerSupport {
             }
         };
     }
-*/
     /**
      * 采用RedisCacheManager作为缓存管理器
      * @param connectionFactory
