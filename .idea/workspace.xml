@@ -435,7 +435,7 @@
       <workItem from="1531807729430" duration="3232000" />
       <workItem from="1531902350983" duration="1400000" />
       <workItem from="1532309052882" duration="14000" />
-      <workItem from="1532577451283" duration="9323000" />
+      <workItem from="1532577451283" duration="9358000" />
     </task>
     <task id="LOCAL-00001" summary="change the key create">
       <created>1531808036739</created>
@@ -458,11 +458,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532595999958</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add 监控模块">
+      <created>1532596016105</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532596016105</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76442000" />
+    <option name="totallyTimeSpent" value="76477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
