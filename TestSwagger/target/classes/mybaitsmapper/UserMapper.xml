@@ -75,4 +75,10 @@
        address = #{address,jdbcType=VARCHAR}
         where id = #{id,jdbcType=INTEGER}
     </update>
+
+    <!--这个更高级的配置创建了一个 FIFO 缓存,并每隔 60 秒刷新,存数结果对象或列表的 512 个引用,而且返回的对象被认为是只读的,因此在不同线程中的调用者之间修改它们会 导致冲突-->
+    <cache  eviction="FIFO"
+             flushInterval="60000"
+             size="512"
+             readOnly="true"/>
 </mapper>
