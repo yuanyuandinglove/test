@@ -5,6 +5,7 @@ import com.test.redis.utils.JSONUtil;
 import com.test.service.impl.MyBaitsXMLUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,10 +18,14 @@ public class MybaitsUserXMLControl {
 
     @Autowired
    private MyBaitsXMLUserServiceImpl myBaitsXMLUserService;
+    @Autowired
+    private Environment environment;
+
     @RequestMapping(value = "/getUserbyId/{id}")
     @Cacheable(value = "id")
     public String getUserbyId(@PathVariable Long id) {
         System.out.println("没有缓存到");
+        System.out.println(environment.getRequiredProperty("info.app.name"));
         User user =  myBaitsXMLUserService.findById(id);
         return JSONUtil.toJson(user);
     }
